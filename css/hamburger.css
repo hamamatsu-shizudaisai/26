@@ -1,0 +1,143 @@
+body {
+    animation: bugfix infinite 1s;
+    -webkit-animation: bugfix infinite 1s;
+}
+
+.lists {
+    margin: 10% 0;
+}
+li a{
+    text-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+}
+
+@keyframes bugfix {
+    from {
+        padding: 0;
+    }
+
+    to {
+        padding: 0;
+    }
+}
+
+@-webkit-keyframes bugfix {
+    from {
+        padding: 0;
+    }
+
+    to {
+        padding: 0;
+    }
+}
+
+#overlay-button {
+    position: fixed;
+    right: 2em;
+    top: 3em;
+    padding: 11px 11px;
+    z-index: 5;
+    cursor: pointer;
+    user-select: none;
+}
+
+#overlay-button span {
+    height: 4px;
+    width: 35px;
+    border-radius: 2px;
+    background-color: white;
+    position: relative;
+    display: block;
+    transition: all .2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+}
+
+#overlay-button span:before {
+    top: -10px;
+    visibility: visible;
+}
+
+#overlay-button span:after {
+    top: 10px;
+}
+
+#overlay-button span:before,
+#overlay-button span:after {
+    height: 4px;
+    width: 35px;
+    border-radius: 2px;
+    background-color: white;
+    position: absolute;
+    content: "";
+    transition: all .2s ease-in-out;
+    right: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+
+}
+
+#overlay-button:hover span,
+#overlay-button:hover span:before,
+#overlay-button:hover span:after {
+    background: #fff;
+}
+
+input[type=checkbox] {
+    display: none;
+
+}
+
+input[type=checkbox]:checked~#overlay {
+    visibility: visible;
+}
+
+input[type=checkbox]:checked~#overlay-button:hover span,
+input[type=checkbox]:checked~#overlay-button span {
+    background: transparent;
+
+
+}
+
+input[type=checkbox]:checked~#overlay-button span:before {
+    transform: rotate(45deg) translate(7px, 7px);
+
+}
+
+input[type=checkbox]:checked~#overlay-button span:after {
+    transform: rotate(-45deg) translate(7px, -7px);
+
+
+}
+
+#overlay {
+    width: 100vw;
+    background: #00000082;
+    z-index: 2;
+    visibility: hidden;
+    position: fixed;
+}
+
+#overlay.active {}
+
+#overlay ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 90vh;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#overlay ul li {
+    padding: 1em;
+}
+
+#overlay ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#overlay ul li a:hover {
+    color: #000 !important;
+}

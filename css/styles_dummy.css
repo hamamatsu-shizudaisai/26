@@ -1,0 +1,1133 @@
+/* .indent { 
+    position: relative;
+    top: 8px;
+}
+
+.indent_ex {
+    position: relative;
+    top: 0.5px;
+    font-size: 80%;
+}*/
+/* header {
+    background-image: linear-gradient(180deg, #1e7cff, #63c1ff,transparent);
+} */
+
+@font-face {
+    font-family: "Noto_Sans_JP";
+    src: url(https://delty-memo.com/Dfonts/NotoSansJP-Medium.ttf) format("truetype");
+}
+
+html {
+    font-family: "Noto_Sans_JP";
+}
+
+@media screen and (max-width: 700px) {
+    /*⇐この部分で画面サイズに応じて適用するcssを分岐(メディアクエリ)*/
+
+
+
+    .forPC {
+        display: none;
+    }
+
+    /* ボディ全体のスタイルを設定 */
+    body {
+        font-family: Arial, sans-serif;
+        /* フォントを設定 */
+        margin: 0;
+        /* ページ全体の余白をリセット */
+        padding: 0;
+    }
+
+    .UnderlinedPart {
+        text-decoration: underline;
+    }
+
+    /*.namae(ドット名前でその名前のクラスを指定する)*/
+    .blank {
+        background-color: white;
+        height: 50px;
+
+    }
+
+    /* ヘッダーのスタイル */
+    header {
+        color: rgb(5, 11, 111);
+        /* 文字色を濃い青(Webページとして色は絞り、そして統一する！)に設定 */
+        padding: 10px 0;
+        /* ヘッダー内の余白を設定 */
+        text-align: center;
+        /* テキストを中央揃えに設定 */
+    }
+
+    .links {
+        text-decoration: none;
+    }
+
+    .flex-container {
+        display: flex;
+        /* フレックスボックス/コンテナを作るのに、displayプロパティを使ってflexを指定する */
+        padding: 0 20px;
+    }
+    .flexbox_1{
+        flex: 0.8;
+    }
+    .flexbox_2{
+        flex: 1;
+    }
+    .flexbox_1,
+    .flexbox_2 {
+        padding: 10px 10px;
+        background-color: white;
+        margin: 10px 3px;
+        border-radius: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+        /* ホバリングもする。 */
+        /* できたらDelty-memoみたいにグラデーションもする */
+    }
+
+    .flexbox_3 {
+        flex: 2;
+        padding: 10px 10px;
+        background-color: white;
+        margin: 10px 3px;
+        border-radius: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+        /* ホバリングもする。 */
+        /* できたらDelty-memoみたいにグラデーションもする */
+    }
+
+    .flexbox_1:hover,
+    .flexbox_2:hover,
+    .flexbox_3:hover {
+        opacity: 0.6;
+    }
+
+    .logo {
+        width: 20%;
+        min-width: 150px;
+    }
+
+    /* .daisailogo img{
+        flex: 1;
+        width: 60%;
+        height: auto;
+        position: relative;
+        left: -20px;
+    } */
+
+    .about {
+        text-align: center;
+
+    }
+
+
+
+    /* ナビゲーションメニューのスタイル */
+    nav ul {
+        list-style-type: none;
+        /* リストの点を消去 */
+        padding: 0;
+        /* 余白をリセット */
+    }
+
+    nav ul li {
+        display: inline;
+        /* リストアイテムを横並びに設定 */
+        margin: 0 10px;
+        /* リストアイテム間に余白を設定 */
+    }
+
+    nav ul li a {
+        color: white;
+        /* リンク文字色を白に設定 */
+        text-decoration: none;
+        /* リンクの下線を消去 */
+    }
+
+    /* メインコンテンツのセクションスタイル */
+    main {
+        padding: 20px 0 0 0;
+        /* コンテンツ全体の内側に余白を設定 */
+        text-align: center;
+    }
+
+    /* 各セクションのタイトルのスタイル */
+    main h2 {
+        color: #228af1;
+        /* タイトルの文字色を水色に設定 */
+    }
+
+    .headline_2 {
+        color: #228af1;
+        /* タイトルの文字色を水色に設定 */
+        font-size: 130%;
+    }
+
+    .EventItemsForPC {
+        display: none;
+    }
+
+
+
+    .flexbox_4,
+    .flexbox_5,
+    .flexbox_6 {
+        flex: 1;
+        margin: 0px 10px;
+    }
+
+    .UnderlinedPart {
+        text-align: left;
+    }
+
+    .pic_box img {
+        height: auto;
+        width: 90%;
+        border-radius: 30px;
+        margin: 30px 0 10px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    }
+
+    /* フッターのスタイル */
+    footer {
+        background-color: #333;
+        /* フッターの背景色をヘッダーと同じく濃いグレーに設定 */
+        color: white;
+        /* 文字色を白に設定 */
+        padding: 10px 20px;
+        /* フッター内の余白を設定 */
+        text-align: center;
+        /* テキストを中央揃えに設定 */
+
+        /*margin-top: 20px;
+         フッターの上に余白を設定 */
+    }
+
+    /* ローディングスクリーンのスタイル */
+    #loading {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.5s ease;
+    }
+
+    .loading-content {
+        font-size: 24px;
+        color: #F57C00;
+        /* オレンジ色 */
+        font-family: Arial, sans-serif;
+    }
+
+    /* ローディングスクリーンのフェードアウト */
+    #loading.fade-out {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .button-link {
+        display: inline-block;
+        width: 150px;
+        /* ボタンの幅 */
+        height: 50px;
+        /* ボタンの高さ */
+        background-image: url("C:Users/bi23067/Desktop/25thWeb/0829/source/Button_1.png");
+        /* 背景画像のパス */
+        background-size: cover;
+        /* 画像をボタンのサイズに合わせてカバー */
+        background-position: center;
+        /* 画像を中央に配置 */
+        color: white;
+        /* テキストの色 */
+        text-align: center;
+        /* テキストを中央揃え */
+        line-height: 50px;
+        /* ボタンの高さと一致させる */
+        text-decoration: none;
+        /* リンクの下線を消去 */
+        font-size: 16px;
+        /* テキストのサイズ */
+        font-weight: bold;
+        /* テキストを太字に */
+    }
+
+    .poster img {
+        width: 80%;
+    }
+
+
+
+
+    /* ヒーローセクションの透かしとテキストのスタイル */
+    .hero-section {
+        position: relative;
+        /* 子要素を絶対位置で配置するための設定 */
+        background-image: url("https://www.hama-shizudaisai.com/25/source/Sport_1.jpg");
+        background-size: cover;
+        background-position: center 75%;
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+    }
+
+    .hero-overlay {
+        color: white;
+        /* テキストの色を白に設定 */
+        text-align: right;
+        /* テキストを右揃え */
+        padding: 0 3% 0 0;
+    }
+
+    .main-title {
+        font-size: 50px;
+        /* 大きな文字サイズ */
+        margin-bottom: 20px;
+        /* テキスト間の余白 */
+    }
+
+    .sub-title {
+        font-size: 150%;
+        /* 別のフォントサイズ */
+    }
+
+
+    .WithoutMainStageInfo img {
+        width: 10%;
+        height: auto;
+        min-width: 80px;
+
+    }
+
+    /* 09/26分 */
+    .introCaption_box {
+        text-align: left;
+        padding: 20px 0 20px 30px;
+    }
+
+    .theme {
+        text-align: left;
+        padding: 20px 30px 20px 0;
+        background-image: url(https://delty-memo.com/Dimages/theme.jpg);
+        background-size: cover;
+        color: white;
+    }
+
+    .themeCaption_1 {
+        text-align: right;
+
+    }
+
+    .themeCaption_2 {
+        text-align: right;
+        margin: 0 0 20px 0;
+    }
+
+    .themeCaption_content {
+        padding: 0 0 0 20px;
+    }
+
+    .chairman_Remark {
+        text-align: left;
+        padding: 0 20px 30px 30px;
+    }
+
+    .chairman_first {
+        margin: 20px 0;
+        font-size: 200%;
+    }
+
+    .notSP_switch {
+        display: none;
+    }
+
+    .RenewInfoBox {
+        padding: 10px 10% 30px 10%;
+        background-image: linear-gradient(45deg, #ffe6e6, #cfddf7);
+        text-align: left;
+    }
+
+    .RenewInfoBox-table th {
+        vertical-align: top;
+        width: 10%;
+        padding: 3px 10px 0 0;
+    }
+
+    .separation {
+        padding: 10px 20px 30px 20px;
+        background-image: linear-gradient(63deg, #ffdeb7, #e7efd8);
+
+    }
+
+    .WithoutMainStageInfo {
+        padding: 15px 7% 30px 7%;
+        background-color: #dedede;
+    }
+
+    .poster {
+        padding: 10px 0 30px 0;
+        background-image: linear-gradient(69deg, #e7fff5, #d2e7ff);
+    }
+
+    .txt-box {
+        margin: 0 0 20px 0;
+    }
+
+    .sub-title-caption {
+        font-size: 80%;
+        position: relative;
+        left: 10px;
+    }
+
+    .poster-img1 {
+        max-width: 400px;
+        border: 7px solid;
+        border-image: linear-gradient(45deg, #ae9800, #fff7cd) 1;
+    }
+
+    .poster-img2 {
+        max-width: 400px;
+        border: 7px solid;
+        border-image: linear-gradient(45deg, #787878, #ededed) 1;
+    }
+
+    .txt_box{
+        font-size: 100%;
+        font-weight: bold;
+    }
+
+    .poster-caption{
+        margin: 0 7%;
+        text-align: left;
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+
+    /* ボディ全体のスタイルを設定 */
+    body {
+        font-family: Arial, sans-serif;
+        /* フォントを設定 */
+        margin: 0;
+        /* ページ全体の余白をリセット */
+        padding: 0;
+    }
+
+    .forSP {
+        display: none;
+    }
+
+
+
+    .UnderlinedPart {
+        text-decoration: underline;
+    }
+
+    /*.namae(ドット名前でその名前のクラスを指定する)*/
+    .blank {
+        background-color: white;
+        height: 50px;
+
+    }
+
+    /* ヘッダーのスタイル */
+    header {
+        color: rgb(5, 11, 111);
+        /* 文字色を濃い青(Webページとして色は絞り、そして統一する！)に設定 */
+        padding: 10px 20px;
+        /* ヘッダー内の余白を設定 */
+        text-align: center;
+        /* テキストを中央揃えに設定 */
+    }
+
+    .links {
+        text-decoration: none;
+    }
+
+    .flex-container {
+        display: flex;
+        /* フレックスボックス/コンテナを作るのに、displayプロパティを使ってflexを指定する */
+        padding: 0 20px;
+    }
+
+    .flexbox_1,
+    .flexbox_2,
+    .flexbox_3 {
+        flex: 1;
+        padding: 10px 10px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+        /* ホバリングもする。 */
+        /* できたらDelty-memoみたいにグラデーションもする */
+    }
+
+    .flexbox_1:hover,
+    .flexbox_2:hover,
+    .flexbox_3:hover {
+        opacity: 0.6;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    /* .daisailogo img{
+            flex: 1;
+            width: 60%;
+            height: auto;
+            position: relative;
+            left: -20px;
+        } */
+
+    .about {
+        text-align: center;
+
+    }
+
+
+
+    /* ナビゲーションメニューのスタイル */
+    nav ul {
+        list-style-type: none;
+        /* リストの点を消去 */
+        padding: 0;
+        /* 余白をリセット */
+    }
+
+    nav ul li {
+        display: inline;
+        /* リストアイテムを横並びに設定 */
+        margin: 0 10px;
+        /* リストアイテム間に余白を設定 */
+    }
+
+    nav ul li a {
+        color: white;
+        /* リンク文字色を白に設定 */
+        text-decoration: none;
+        /* リンクの下線を消去 */
+    }
+
+    /* メインコンテンツのセクションスタイル */
+    main {
+        padding: 20px 0 0 0;
+        /* コンテンツ全体の内側に余白を設定 */
+        text-align: center;
+    }
+
+    /* 各セクションのタイトルのスタイル */
+    main h2 {
+        color: #228af1;
+        /* タイトルの文字色を水色に設定 */
+    }
+
+    .headline_2 {
+        color: #228af1;
+        /* タイトルの文字色を水色に設定 */
+        font-size: 130%;
+    }
+
+    .EventItemsForNotPC {
+        display: none;
+    }
+
+    .EventItemsForPC {
+        display: flex;
+    }
+
+    .flexbox_4,
+    .flexbox_5,
+    .flexbox_6 {
+        flex: 1;
+        margin: 0px 10px;
+    }
+
+    .UnderlinedPart {
+        text-align: left;
+    }
+
+    .pic_box img {
+        height: auto;
+        width: 90%;
+        border-radius: 30px;
+        margin: 30px 0 10px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+
+    }
+
+    /* フッターのスタイル */
+    footer {
+        background-color: #333;
+        /* フッターの背景色をヘッダーと同じく濃いグレーに設定 */
+        color: white;
+        /* 文字色を白に設定 */
+        padding: 10px 20px;
+        /* フッター内の余白を設定 */
+        text-align: center;
+        /* テキストを中央揃えに設定 */
+
+        /*margin-top: 20px;
+             フッターの上に余白を設定 */
+    }
+
+    /* ローディングスクリーンのスタイル */
+    #loading {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.5s ease;
+    }
+
+    .loading-content {
+        font-size: 24px;
+        color: #F57C00;
+        /* オレンジ色 */
+        font-family: Arial, sans-serif;
+    }
+
+    /* ローディングスクリーンのフェードアウト */
+    #loading.fade-out {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .button-link {
+        display: inline-block;
+        width: 150px;
+        /* ボタンの幅 */
+        height: 50px;
+        /* ボタンの高さ */
+        background-image: url("C:Users/bi23067/Desktop/25thWeb/0829/source/Button_1.png");
+        /* 背景画像のパス */
+        background-size: cover;
+        /* 画像をボタンのサイズに合わせてカバー */
+        background-position: center;
+        /* 画像を中央に配置 */
+        color: white;
+        /* テキストの色 */
+        text-align: center;
+        /* テキストを中央揃え */
+        line-height: 50px;
+        /* ボタンの高さと一致させる */
+        text-decoration: none;
+        /* リンクの下線を消去 */
+        font-size: 16px;
+        /* テキストのサイズ */
+        font-weight: bold;
+        /* テキストを太字に */
+    }
+
+
+
+
+
+    /* ヒーローセクションの透かしとテキストのスタイル */
+    .hero-section {
+        position: relative;
+        /* 子要素を絶対位置で配置するための設定 */
+        background-image: url("https://www.hama-shizudaisai.com/25/source/Sport_1.jpg");
+        background-size: cover;
+        background-position: center 75%;
+        width: 100%;
+        height: 670px;
+        overflow: hidden;
+    }
+
+    .hero-overlay {
+        color: white;
+        /* テキストの色を白に設定 */
+        text-align: right;
+        /* テキストを右揃え */
+        padding: 0 3% 0 0;
+
+    }
+
+    .main-title {
+        font-size: 50px;
+        /* 大きな文字サイズ */
+        margin-bottom: 20px;
+        /* テキスト間の余白 */
+    }
+
+    .sub-title {
+        font-size: 150%;
+        /* 別のフォントサイズ */
+    }
+
+
+    .WithoutMainStageInfo img {
+        width: 10%;
+        height: auto;
+        min-width: 80px;
+    }
+
+
+    /* 09/26分 */
+    .introCaption_box {
+        text-align: left;
+        padding: 20px 0 20px 30px;
+    }
+
+    .theme {
+        text-align: right;
+        padding: 20px 30px 20px 0;
+        background-image: url(https://delty-memo.com/Dimages/theme.jpg);
+        background-size: cover;
+        color: white;
+    }
+
+    .themeCaption_2 {
+        margin: 0 0 20px 0;
+    }
+
+    .chairman_Remark {
+        text-align: left;
+        padding: 0 0 30px 30px;
+    }
+
+    .chairman_first {
+        margin: 20px 0;
+        font-size: 200%;
+    }
+
+    .SP_switch {
+        display: none;
+    }
+
+    .RenewInfoBox {
+        padding: 10px 20% 30px 20%;
+        background-image: linear-gradient(45deg, #ffe6e6, #cfddf7);
+        text-align: left;
+
+    }
+
+    .RenewInfoBox-table th {
+        vertical-align: top;
+        width: 10%;
+        padding: 3px 10px 0 0;
+
+    }
+
+    .separation {
+        padding: 10px 20px 30px 20px;
+        background-image: linear-gradient(63deg, #ffdeb7, #e7efd8);
+
+    }
+
+    .WithoutMainStageInfo {
+        padding: 15px 7% 30px 7%;
+        background-color: #dedede;
+    }
+
+    .poster {
+        padding: 10px 0 30px 0;
+        background-image: linear-gradient(69deg, #e7fff5, #d2e7ff);
+    }
+
+    .txt-box {
+        margin: 0 0 20px 0;
+    }
+
+    .sub-title-caption {
+        font-size: 100%;
+        position: relative;
+        left: 10px;
+    }
+
+    .poster-img1 {
+        max-width: 400px;
+        border: 7px solid;
+        border-image: linear-gradient(45deg, #ae9800, #fff7cd) 1;
+    }
+
+    .poster-img2 {
+        max-width: 400px;
+        border: 7px solid;
+        border-image: linear-gradient(45deg, #787878, #ededed) 1;
+    }
+
+    .txt_box{
+        font-size: 100%;
+        font-weight: bold;
+    }
+    .poster-caption{
+        margin: 0 7%;
+        text-align: left;
+    }
+}
+
+
+
+@media screen and (min-width: 900px) {
+
+    .forSP {
+        display: none;
+    }
+
+    /* ボディ全体のスタイルを設定 */
+    body {
+        font-family: Arial, sans-serif;
+        /* フォントを設定 */
+        margin: 0;
+        /* ページ全体の余白をリセット */
+        padding: 0;
+    }
+
+
+
+
+
+    .UnderlinedPart {
+        text-decoration: underline;
+    }
+
+    /*.namae(ドット名前でその名前のクラスを指定する)*/
+    .blank {
+        background-color: white;
+        height: 50px;
+
+    }
+
+    /* ヘッダーのスタイル */
+    header {
+        color: rgb(5, 11, 111);
+        /* 文字色を濃い青(Webページとして色は絞り、そして統一する！)に設定 */
+        padding: 10px 0;
+        /* ヘッダー内の余白を設定 */
+        text-align: center;
+        /* テキストを中央揃えに設定 */
+    }
+
+    .links {
+        text-decoration: none;
+    }
+
+    .flex-container {
+        display: flex;
+        /* フレックスボックス/コンテナを作るのに、displayプロパティを使ってflexを指定する */
+        padding: 0 15%;
+    }
+
+    .flexbox_1,
+    .flexbox_2,
+    .flexbox_3 {
+        flex: 1;
+        padding: 10px 10px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+        /* ホバリングもする。 */
+        /* できたらDelty-memoみたいにグラデーションもする */
+    }
+
+    .flexbox_1:hover,
+    .flexbox_2:hover,
+    .flexbox_3:hover {
+        opacity: 0.6;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    /* .daisailogo img{
+            flex: 1;
+            width: 60%;
+            height: auto;
+            position: relative;
+            left: -20px;
+        } */
+
+    .about {
+        text-align: center;
+
+    }
+
+
+
+    /* ナビゲーションメニューのスタイル */
+    nav ul {
+        list-style-type: none;
+        /* リストの点を消去 */
+        padding: 0;
+        /* 余白をリセット */
+    }
+
+    nav ul li {
+        display: inline;
+        /* リストアイテムを横並びに設定 */
+        margin: 0 10px;
+        /* リストアイテム間に余白を設定 */
+    }
+
+    nav ul li a {
+        color: white;
+        /* リンク文字色を白に設定 */
+        text-decoration: none;
+        /* リンクの下線を消去 */
+    }
+
+    /* メインコンテンツのセクションスタイル */
+    main {
+        padding: 20px 0 0 0;
+        /* コンテンツ全体の内側に余白を設定 */
+        text-align: center;
+    }
+
+    /* 各セクションのタイトルのスタイル */
+    main h2 {
+        color: #228af1;
+        font-size: 300%;
+        /* タイトルの文字色を水色に設定 */
+    }
+
+    .headline_2 {
+        color: #228af1;
+        /* タイトルの文字色を水色に設定 */
+        font-size: 130%;
+    }
+
+    .EventItemsForNotPC {
+        display: none;
+    }
+
+    .EventItemsForPC {
+        display: flex;
+    }
+
+
+
+    .flexbox_4,
+    .flexbox_5,
+    .flexbox_6 {
+        flex: 1;
+        margin: 0px 10px;
+    }
+
+    .UnderlinedPart {
+        text-align: left;
+    }
+
+    .pic_box img {
+        height: auto;
+        width: 100%;
+        border-radius: 30px;
+        margin: 0 0 10px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    }
+
+    /* フッターのスタイル */
+    footer {
+        background-color: #333;
+        /* フッターの背景色をヘッダーと同じく濃いグレーに設定 */
+        color: white;
+        /* 文字色を白に設定 */
+        padding: 10px 20px;
+        /* フッター内の余白を設定 */
+        text-align: center;
+        /* テキストを中央揃えに設定 */
+
+        /*margin-top: 20px;
+             フッターの上に余白を設定 */
+    }
+
+    /* ローディングスクリーンのスタイル */
+    #loading {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.5s ease;
+    }
+
+    .loading-content {
+        font-size: 24px;
+        color: #F57C00;
+        /* オレンジ色 */
+        font-family: Arial, sans-serif;
+    }
+
+    /* ローディングスクリーンのフェードアウト */
+    #loading.fade-out {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .button-link {
+        display: inline-block;
+        width: 150px;
+        /* ボタンの幅 */
+        height: 50px;
+        /* ボタンの高さ */
+        background-image: url("C:Users/bi23067/Desktop/25thWeb/0829/source/Button_1.png");
+        /* 背景画像のパス */
+        background-size: cover;
+        /* 画像をボタンのサイズに合わせてカバー */
+        background-position: center;
+        /* 画像を中央に配置 */
+        color: white;
+        /* テキストの色 */
+        text-align: center;
+        /* テキストを中央揃え */
+        line-height: 50px;
+        /* ボタンの高さと一致させる */
+        text-decoration: none;
+        /* リンクの下線を消去 */
+        font-size: 16px;
+        /* テキストのサイズ */
+        font-weight: bold;
+        /* テキストを太字に */
+    }
+
+
+
+
+
+    /* ヒーローセクションの透かしとテキストのスタイル */
+    .hero-section {
+        position: relative;
+        /* 子要素を絶対位置で配置するための設定 */
+        background-image: url("https://www.hama-shizudaisai.com/25/source/Sport_1.jpg");
+        background-size: cover;
+        background-position: center 75%;
+        width: 100%;
+        height: 780px;
+        overflow: hidden;
+    }
+
+    .hero-overlay {
+        color: white;
+        /* テキストの色を白に設定 */
+        text-align: right;
+        /* テキストを右揃え */
+        padding: 0 3% 0 0;
+    }
+
+    .main-title {
+        font-size: 50px;
+        /* 大きな文字サイズ */
+        margin-bottom: 20px;
+        /* テキスト間の余白 */
+    }
+
+    .sub-title {
+        font-size: 150%;
+        /* 別のフォントサイズ */
+    }
+
+
+    .WithoutMainStageInfo img {
+        width: 10%;
+        height: auto;
+        min-width: 80px;
+    }
+
+    /* 09/26分 */
+    .introCaption_box {
+        text-align: left;
+        padding: 20px 0 20px 30px;
+    }
+
+    .theme {
+        text-align: right;
+        padding: 20px 30px 20px 0;
+        background-image: url(https://delty-memo.com/Dimages/theme.jpg);
+        background-size: cover;
+        color: white;
+    }
+
+    .themeCaption_2 {
+        margin: 0 0 20px 0;
+    }
+
+    .chairman_Remark {
+        text-align: left;
+        padding: 0 0 30px 30px;
+    }
+
+    .chairman_first {
+        margin: 20px 0;
+        font-size: 200%;
+    }
+
+    .SP_switch {
+        display: none;
+    }
+
+    .RenewInfoBox {
+        padding: 10px 25% 30px 25%;
+        background-image: linear-gradient(45deg, #ffe6e6, #cfddf7);
+        text-align: left;
+
+    }
+
+    .RenewInfoBox-table th {
+        vertical-align: top;
+        width: 10%;
+        padding: 3px 10px 0 0;
+
+    }
+
+    .separation {
+        padding: 10px 20px 30px 20px;
+        background-image: linear-gradient(63deg, #ffdeb7, #e7efd8);
+
+    }
+
+    .WithoutMainStageInfo {
+        padding: 15px 7% 30px 7%;
+        background-color: #dedede;
+    }
+
+    .poster {
+        padding: 10px 0 30px 0;
+        background-image: linear-gradient(69deg, #e7fff5, #d2e7ff);
+    }
+
+    .txt-box {
+        margin: 0 0 20px 0;
+    }
+
+    .poster-img1 {
+        width: 50%;
+        border: 7px solid;
+        border-image: linear-gradient(45deg, #ae9800, #fff7cd) 1;
+    }
+
+    .poster-img2 {
+        width: 50%;
+        border: 7px solid;
+        border-image: linear-gradient(45deg, #787878, #ededed) 1;
+    }
+    .sub-title-caption {
+        font-size: 100%;
+        position: relative;
+        left: 10px;
+    }
+
+    .txt_box{
+        font-size: 120%;
+        font-weight: bold;
+    }
+    .poster-caption{
+        margin: 0 7%;
+        text-align: left;
+    }
+}

@@ -1,0 +1,191 @@
+.events-title {
+    font-size: 300%;
+    margin: 2% 15% 0 15%;
+    border-bottom: 3px dotted;
+}
+
+.events-caption {
+    margin: 2% 0 50px 0;
+}
+
+.exitbutton-caption {
+    position: relative;
+    top: 12px;
+}
+
+.exitbutton:hover {
+    opacity: 0.6;
+}
+
+.mainstage-cards {
+    text-align: left;
+    margin: 5% 10%;
+    border: 5px solid;
+    border-color: #fff399;
+    background-color: #fffaff;
+    border-image: linear-gradient(45deg, #8b0081, #fff5ff) 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    padding: 0 0 5% 0;
+}
+
+table th {
+    width: 20%;
+    background: #f3e2ff;
+    padding: 1.5%;
+    border: 1px solid #a7a7a7;
+    text-align: center;
+}
+
+.sat{
+    color: #4694f4;
+}
+.sun{
+    color: #ff8484;
+}
+
+@media screen and (max-width: 700px) {
+    .events-title {
+        font-size: 200%;
+    }
+
+    .exitbutton {
+        border-radius: 100px;
+        background-color: #10004f;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+        margin: 0 30% 40px 30%;
+        height: 50px;
+        color: #FFFFFF;
+    }
+
+    .exitbutton a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    table {
+        font-size: 80%;
+        margin: 4% auto 0 auto;
+        border-collapse: collapse;
+        border: 2px solid #66646a;
+    }
+
+    .mainstage-title {
+        font-size: 130%;
+        margin: 2% 5% 4% 5%;
+        border-bottom: 2px solid;
+        border-image: linear-gradient(to right, #8300ab, #ffffff) 1;
+    }
+
+    .mainstage-caption {
+        margin: 0 6% 0 6%;
+        font-size: 80%;
+    }
+    .mainstage-category{
+        margin: 4% 0 0 4%;
+        font-size: 80%;
+    }
+    table td {
+        border: 1px solid #a7a7a7;
+        padding: 2%;
+        width: 180px;
+        text-align: left;
+
+    }
+    .logo-border{
+        text-align: center;
+        border-left: 2px solid #66646a;
+    }
+    .logo-border-img{
+        width: 80%;
+        max-width: 150px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+    .exitbutton {
+        border-radius: 100px;
+        background-color: #10004f;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+        margin: 0 38% 40px 38%;
+        height: 50px;
+        color: #FFFFFF;
+
+    }
+
+    .exitbutton a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .mainstage-title {
+        font-size: 180%;
+        margin: 2% 5% 4% 5%;
+        border-bottom: 2px solid;
+        border-image: linear-gradient(to right, #8300ab, #ffffff) 1;
+    }
+
+    .mainstage-caption {
+        margin: 0 6% 0 6%;
+    }
+    table {
+        margin: 4% 10% 0 10%;
+        border-collapse: collapse;
+        border: 2px solid #66646a;
+    }
+    .mainstage-category{
+        margin: 3% 0 0 3%;
+    }
+
+    table td {
+        border: 1px solid #a7a7a7;
+        padding: 2%;
+        width: 350px;
+        text-align: left;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+
+    .exitbutton {
+        border-radius: 100px;
+        background-color: #10004f;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+        margin: 0 38% 40px 38%;
+        height: 50px;
+        color: #FFFFFF;
+
+    }
+
+    .exitbutton a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .mainstage-title {
+        font-size: 180%;
+        margin: 2% 5% 4% 5%;
+        border-bottom: 2px solid;
+        border-image: linear-gradient(to right, #8300ab, #ffffff) 1;
+    }
+
+    .mainstage-caption {
+        margin: 0 6% 0 6%;
+    }
+    table {
+        margin: 4% 17% 0 17%;
+        border-collapse: collapse;
+        border: 2px solid #66646a;
+    }
+    .mainstage-category{
+        margin: 3% 0 0 3%;
+    }
+
+    table td {
+        border: 1px solid #a7a7a7;
+        padding: 2%;
+        width: 420px;
+        text-align: left;
+    }
+}
