@@ -229,7 +229,7 @@ html {
     /* ボタンの幅 */
     height: 50px;
     /* ボタンの高さ */
-    background-image: url("../C:Users/bi23067/Desktop/25thWeb/0829/source/Button_1.png");
+    background-image: url("../C:Users/bi23067/Desktop/25thWeb/0829/img/Button_1.png");
     /* 背景画像のパス */
     background-size: cover;
     /* 画像をボタンのサイズに合わせてカバー */
@@ -257,7 +257,7 @@ html {
   .hero-section {
     position: relative;
     /* 子要素を絶対位置で配置するための設定 */
-    background-image: url("../source/Sport_1.jpg");
+    background-image: url("../img/Sport_1.jpg");
     background-size: cover;
     background-position: center 75%;
     width: 100%;
@@ -586,7 +586,7 @@ html {
     /* ボタンの幅 */
     height: 50px;
     /* ボタンの高さ */
-    background-image: url("../C:Users/bi23067/Desktop/25thWeb/0829/source/Button_1.png");
+    background-image: url("../C:Users/bi23067/Desktop/25thWeb/0829/img/Button_1.png");
     /* 背景画像のパス */
     background-size: cover;
     /* 画像をボタンのサイズに合わせてカバー */
@@ -610,7 +610,7 @@ html {
   .hero-section {
     position: relative;
     /* 子要素を絶対位置で配置するための設定 */
-    background-image: url("../source/Sport_1.jpg");
+    background-image: url("../img/Sport_1.jpg");
     background-size: cover;
     background-position: center 75%;
     width: 100%;
@@ -930,7 +930,7 @@ html {
     /* ボタンの幅 */
     height: 50px;
     /* ボタンの高さ */
-    background-image: url("../C:Users/bi23067/Desktop/25thWeb/0829/source/Button_1.png");
+    background-image: url("../C:Users/bi23067/Desktop/25thWeb/0829/img/Button_1.png");
     /* 背景画像のパス */
     background-size: cover;
     /* 画像をボタンのサイズに合わせてカバー */
@@ -954,7 +954,7 @@ html {
   .hero-section {
     position: relative;
     /* 子要素を絶対位置で配置するための設定 */
-    background-image: url("../source/Sport_1.jpg");
+    background-image: url("../img/Sport_1.jpg");
     background-size: cover;
     background-position: center 75%;
     width: 100%;
