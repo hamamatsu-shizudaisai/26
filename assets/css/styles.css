@@ -265,7 +265,7 @@ html {
   .hero-section {
     position: relative;
     /* 子要素を絶対位置で配置するための設定 */
-    background-image: url("assets/img/Sport_1.jpg");
+    background-image: url("../img/Sport_1.jpg");
     background-size: cover;
     background-position: center 75%;
     width: 100%;
@@ -615,7 +615,7 @@ html {
   .hero-section {
     position: relative;
     /* 子要素を絶対位置で配置するための設定 */
-    background-image: url("assets/img/Sport_1.jpg");
+    background-image: url("../img/Sport_1.jpg");
     background-size: cover;
     background-position: center 75%;
     width: 100%;
@@ -959,7 +959,7 @@ html {
   .hero-section {
     position: relative;
     /* 子要素を絶対位置で配置するための設定 */
-    background-image: url("assets/img/Sport_1.jpg");
+    background-image: url("../img/Sport_1.jpg");
     background-size: cover;
     background-position: center 75%;
     width: 100%;
