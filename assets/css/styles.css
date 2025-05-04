@@ -373,7 +373,10 @@ html {
   .sub-title-caption {
     font-size: 80%;
     position: relative;
-    left: 10px;
+    width: 23em;
+    margin-left: auto;
+    text-align: left;
+    background-color: rgba(140, 190, 255, 0.7);
   }
 
   .poster-img1 {
@@ -714,7 +717,10 @@ html {
   .sub-title-caption {
     font-size: 100%;
     position: relative;
-    left: 10px;
+    width: 23em;
+    margin-left: auto;
+    text-align: left;
+    background-color: rgba(140, 190, 255, 0.7);
   }
 
   .poster-img1 {
@@ -1070,7 +1076,10 @@ html {
   .sub-title-caption {
     font-size: 100%;
     position: relative;
-    left: 10px;
+    width: 23em;
+    margin-left: auto;
+    text-align: left;
+    background-color: rgba(140, 190, 255, 0.7);
   }
 
   .txt_box {
